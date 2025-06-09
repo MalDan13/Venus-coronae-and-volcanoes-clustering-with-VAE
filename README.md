@@ -7,6 +7,12 @@ This project consists of four folders: "data", "model_train", "model_test", and 
 * The "data" directory contains CSV files with information about volcanic structures: unique IDs, names, coordinates, and diameters. It also includes examples of SAR images and topographical maps of the structures studied.
 * "model_train" contains notebooks for training autoencoders to recognize volcanic structures on Venus using satellite imagery and topography.
 * In the "model_test" folder, there are notebooks for testing the trained models.
-* Finally, the "latent_dim_clustering" folder includes two notebooks. The first notebook extracts features from the latent space of autoencoders, combines them with additional data, and creates a new dataset called "latent dim concat.ipynb". The second notebook uses PCA to reduce the number of dimensions in the latent features, then performs clustering using K-means and other algorithms such as hierarchical clustering and Gaussian mixture models.
+* Finally, the "latent_dim_clustering" folder includes two notebooks. The first notebook extracts features from the latent space of autoencoders and the second one performs clustering using K-means and other algorithms such as hierarchical clustering and Gaussian mixture models.
 ## Pipeline
-1) We cut 
+1) Before training, each image and topographic map is cut into 64 512x512 pixel tiles with overlap using "Cut_tiles_folder.py".
+2) These tiles are then trained with two separate autoencoders for SAR images and topography maps.
+3) The results are then checked on the entire images after training.
+4) Latent dimensions from the trained models are extracted and combined with other data (coordinates, diameters) to create a new dataset "latent_features_expended_with_types.csv".
+5) This dataset is reduced in dimension using PCA and then used for clustering.
+## Acknowledgments:
+The autoencoders used in this work were adopted from the VanillaVAE (https://github.com/AntixK/PyTorch-VAE). Thanks a lot to https://github.com/Nikita-Belyakov for immense help and support.
