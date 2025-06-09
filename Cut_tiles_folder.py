@@ -4,43 +4,43 @@ import os
 
 def split_image(input_path, output_folder, tile_size=512):
     """
-    Разрезает изображение на тайлы заданного размера с возможным перекрытием.
+    Cuts the image into tiles of the specified size with possible overlap.
 
-    :param input_path: Путь к исходному изображению
-    :param output_folder: Папка для сохранения тайлов
-    :param tile_size: Размер тайла (квадратный)
-    :param overlap: Перекрытие между тайлами (в пикселях)
+    :param input_path: Path to the original image
+    :param output_folder: Folder for saving tiles
+    :param tile_size: Tile size (square)
+    :param overlap: Overlap between tiles (in pixels)
     """
 
-    # Открываем изображение
+    # Opening the image
     img = Image.open(input_path)
     width, height = img.size
 
-    # Итерируемся по изображению и вырезаем тайлы
+    # Iterate through the image and cut out tiles
     tile_num = 0
     for y in range(0, height, 480):
         for x in range(0, width, 512):
-            # Определяем границы тайла
+            # Defining the tile borders
             left = x
             upper = y
             right = min(x + tile_size, width)
             lower = min(y + tile_size, height)
 
-            # Вырезаем тайл
+            # Cutting out a tile
             tile = img.crop((left, upper, right, lower))
 
-            # Если тайл меньше заданного размера, дополняем его
+            # If the tile is smaller than the specified size, we add additional elements to it
             if tile.size != (tile_size, tile_size):
                 new_tile = Image.new('L', (tile_size, tile_size), 0)
                 new_tile.paste(tile, (0, 0))
                 tile = new_tile
 
-            # Формируем имя файла с координатами
+            # Forming a file name with coordinates
             base_name = os.path.splitext(os.path.basename(input_path))[0]
             tile_name = f"{base_name}_{tile_num}.tif"
             tile_path = os.path.join(output_folder, tile_name)
 
-            # Сохраняем тайл
+            # Saving the tile
             tile.save(tile_path)
             tile_num += 1
 
@@ -49,20 +49,20 @@ def split_image(input_path, output_folder, tile_size=512):
 
 def process_folder(input_folder, output_folder, tile_size=512):
     """
-    Обрабатывает все .tif файлы в папке
+    Processes everything .tif files in the folder
 
-    :param input_folder: Папка с исходными изображениями
-    :param output_folder: Папка для сохранения всех тайлов
-    :param tile_size: Размер тайла
-    :param overlap: Перекрытие между тайлами
+    :param input_folder: Folder with source images
+    :param output_folder: Folder for saving all tiles
+    :param tile_size: Tile size
+    :param overlap: Overlap between tiles
     """
 
-    # Получаем список .tif файлов
+    # Getting the list .tif files
     tif_files = [f for f in os.listdir(input_folder) if f.lower().endswith('.tif') and 'topo' not in f.lower()]
 
     total_tiles = 0
     for file_name in tif_files:
-        # Обрабатываем файл
+        # Processing the file
         input_path = os.path.join(input_folder, file_name)
         tiles_count = split_image(input_path, output_folder, tile_size)
 
@@ -73,8 +73,8 @@ def process_folder(input_folder, output_folder, tile_size=512):
     print(f"Все тайлы сохранены в папку: {os.path.abspath(output_folder)}")
 
 
-# Пример использования
-input_folder = r"C:\Users\malys\Desktop\MSU_AI\_images_CRN_Stofan2\1"  # Папка с исходными изображениями
-output_folder = r"C:\Users\malys\Desktop\MSU_AI\_images_CRN_Stofan2\tyles_images_Stofan_2"  # Единая папка для всех тайлов
+# Usage example
+input_folder = r"\path_to_the_input_folder"  # Folder with source images
+output_folder = r"\path_to_the_output_folder"  # Single folder for all tiles
 
 process_folder(input_folder, output_folder)
