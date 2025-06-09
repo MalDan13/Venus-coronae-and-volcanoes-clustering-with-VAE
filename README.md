@@ -1,9 +1,12 @@
-# Venus coronae and volcanoes clustering with VAE
-## Annotation:
-More than 30 years have passed since the Magellan mission, yet the classification of large and medium-sized volcanic edifices on Venus remains unresolved. This study employs machine learning techniques to identify new classes of coronae, as well as large and medium-sized volcanoes. Unlike existing approaches based on manual analysis of radar images, topographic profiles, and diameters, we propose using a variational autoencoder (VAE) to extract features from satellite images for subsequent clustering. The methodology includes the collection and preprocessing of radar image data from the Magellan mission, training a VAE, and applying clustering algorithms (KMeans, DBSCAN, hierarchical clustering) to identify subclasses of geological structures. The results of this study can contribute to the automation of Venusian surface analysis, the expansion of volcanic edifice classification, and preparations for future missions.
-## Contents
-This project has 4 folders: data, model_train, model_test and latent_dim_clustering.
-* The "data" folder contains some examples of synthetic-aperture radar (SAR) images and topographic maps of the studied structures: two coronae, large volcanoes and intermidiate volcanoes.
-* "model_train" folder contains notebooks with autoencoders that are trained to recognise volcanic structures on Venus and corresponding topographic maps.
-* "model_test" folder contains notebooks with code for testing trained models.
-* "latent_dim_clustering" contains two notebooks that are used to first extract features from latent space of the autoencoders and concatenate them together and with additional data  
+# Venus coronae and volcanic clusters with VAEs
+## Annotation
+More than thirty years have passed since the Magellan mission. However, the classification of volcanic features on Venus is still unresolved. In this study, we use machine learning techniques to classify new types of coronas and large and intermediate-sized volcanoes on the planet. Unlike previous approaches that relied on manual analysis of satellite images, radar data, and topographic profiles to determine the size of volcanoes, we employ a variational autoencoder to extract features directly from satellite imagery. We then use clustering algorithms such as K-means, DBSCAN and hierarchical clustering to identify different types of geological features. The results from this study could contribute to automated analysis of the Venusian surface, expansion of our understanding of volcanic activity, and preparation for future exploration missions.
+
+## Contents:
+This project consists of four folders: "data", "model_train", "model_test", and "latent_dim_clustering".
+* The "data" directory contains CSV files with information about volcanic structures: unique IDs, names, coordinates, and diameters. It also includes examples of SAR images and topographical maps of the structures studied.
+* "model_train" contains notebooks for training autoencoders to recognize volcanic structures on Venus using satellite imagery and topography.
+* In the "model_test" folder, there are notebooks for testing the trained models.
+* Finally, the "latent_dim_clustering" folder includes two notebooks. The first notebook extracts features from the latent space of autoencoders, combines them with additional data, and creates a new dataset called "latent dim concat.ipynb". The second notebook uses PCA to reduce the number of dimensions in the latent features, then performs clustering using K-means and other algorithms such as hierarchical clustering and Gaussian mixture models.
+## Pipeline
+1) We cut 
