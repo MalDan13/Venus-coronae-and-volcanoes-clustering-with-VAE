@@ -1,0 +1,137 @@
+uniq_ID,Latitude,Longitude,Name,Max_D_km
+vlc_000,79.754,-97.345,Laka Mons,204.2
+vlc_001,76.074,-124.365,Renpet Mons,649.74
+vlc_002,71.559,-104.103,Metis Mons,649.74
+vlc_003,71.251,139.449,Earhart Corona,176.36
+vlc_004,62.838,119.612,Melia Mons,278.46
+vlc_005,57.79,-105.204,Mokosha Mons,686.88
+vlc_006,53.073,98.202,Amra Tholus,102.1
+vlc_007,52.273,-92.544,Atira Mons,538.36
+vlc_008,47.907,-45.543,no_name,179.78
+vlc_009,44.751,-175.168,Nijole Mons,148.52
+vlc_010,44.382,-119.409,Sekmet Mons,399.14
+vlc_011,40.794,-114.967,no_name#11,584.78
+vlc_012,40.286,-154.176,no_name#12,241.34
+vlc_013,39.848,-156.944,no_name#13,157.8
+vlc_014,39.379,-151.987,Shala Mons,148.52
+vlc_015,38.946,54.65,Api Mons,426.98
+vlc_016,38.876,-137.104,no_name#16,185.64
+vlc_017,37.614,-17.837,Evaki Tholus,129.94
+vlc_018,36.313,-51.687,no_name#18,139.24
+vlc_019,35.77,-123.752,Furki Tholus,259.9
+vlc_020,35.551,-149.041,Kokyanwuti Mons,464.1
+vlc_021,34.784,-83.223,Copacati Mons,176.36
+vlc_022,34.499,-140.809,Sakwap-mana Mons,380.56
+vlc_023,34.296,-114.011,no_name#23,176.36
+vlc_024,32.177,-115.555,no_name#24,148.52
+vlc_025,30.108,48.587,Nyx Mons,362.0
+vlc_026,29.568,45.575,Tepev Mons,269.18
+vlc_027,29.507,-4.701,Toci Tholus,120.66
+vlc_028,28.532,-33.795,no_name#28,92.82
+vlc_029,24.645,-96.105,Polik-mana Mons,259.9
+vlc_030,24.298,6.242,Drol-ma Tholus,148.52
+vlc_031,23.597,-79.765,Theia Mons,519.8
+vlc_032,22.052,-15.357,no_name#32,92.82
+vlc_033,21.85,-8.302,Sif Mons,371.28
+vlc_034,21.712,-1.699,Gula Mons,287.74
+vlc_035,20.873,20.121,no_name#35,120.66
+vlc_036,19.297,80.079,Kunhild Corona,584.78
+vlc_037,18.545,-57.043,no_name#37,102.1
+vlc_038,18.263,37.611,Didilia Corona,742.56
+vlc_039,17.858,163.211,Zaltu Mons,111.38
+vlc_040,17.764,-56.402,no_name#40,148.52
+vlc_041,15.759,69.515,Uti Hiata Mons,399.14
+vlc_042,13.229,-149.095,no_name#42,102.1
+vlc_043,11.003,14.468,Anala Mons,529.08
+vlc_044,10.335,-85.318,Tuulikki Mons,380.56
+vlc_045,10.048,-98.679,Aruru Corona,686.88
+vlc_046,9.504,-51.128,Atanua Mons,176.36
+vlc_047,9.328,29.262,Kali Mons,426.98
+vlc_048,9.119,171.526,Iseghey Mons,139.24
+vlc_049,8.958,-11.403,Somagalags Montes,111.38
+vlc_050,8.681,-171.922,Sapas Mons,306.3
+vlc_051,8.373,-104.434,Nipa Tholus,102.1
+vlc_052,6.782,158.217,Fand Mons,129.94
+vlc_053,4.028,-37.735,no_name#53,27.84
+vlc_054,4.013,-160.478,Ozza Mons,575.5
+vlc_055,3.514,-89.908,Xochiquetzal Mons,204.2
+vlc_056,2.812,45.498,Ptesanwi Mons,241.34
+vlc_057,2.619,-45.83,no_name#57,250.62
+vlc_058,2.39,-58.514,Rhpisunt Mons,204.2
+vlc_059,1.183,-43.872,Var Mons,120.66
+vlc_060,0.735,34.321,Dzalarhons Mons,278.46
+vlc_061,0.686,-165.354,Maat Mons,426.98
+vlc_062,-6.298,172.181,Nirmali Corona,74.26
+vlc_063,-8.157,-116.77,Dhorani Corona,445.54
+vlc_064,-8.928,-54.713,Muru Tholus,185.64
+vlc_065,-10.98,-4.559,Talakin Mons,148.52
+vlc_066,-13.188,-98.489,Uretsete Mons,297.02
+vlc_067,-13.613,-54.439,Vupar Tholus,120.66
+vlc_068,-15.158,-144.909,Mbokomu Mons,380.56
+vlc_069,-17.944,-74.911,Yunya-mana Mons,306.3
+vlc_070,-18.386,-100.758,Nagavonyi Corona,380.56
+vlc_071,-18.666,-67.254,no_name#71,148.52
+vlc_072,-19.585,-14.734,no_name#72,92.82
+vlc_073,-20.461,-87.064,no_name#73,102.1
+vlc_074,-21.257,-121.234,Gwen Mons,102.1
+vlc_075,-22.244,-68.967,Atai Mons,315.6
+vlc_076,-24.556,177.355,Flidais Corona,314.11
+vlc_077,-24.723,-36.46,Ushas Mons,257.47
+vlc_078,-25.746,-112.404,Witte Patera,232.06
+vlc_079,-27.736,-79.377,Mielikki Mons,464.1
+vlc_080,-28.696,-63.436,Justitia Tholus,139.24
+vlc_081,-31.505,-131.787,no_name#81,167.08
+vlc_082,-33.658,-42.395,Nepthys Mons,232.06
+vlc_083,-33.943,85.753,Kunapipi Mons,705.44
+vlc_084,-34.635,-31.731,Innini Mons,315.6
+vlc_085,-34.74,-133.739,no_name#85,129.94
+vlc_086,-37.796,-90.004,Mertseger Mons,482.68
+vlc_087,-38.411,-57.045,Tefnut Mons,373.94
+vlc_088,-39.063,-36.019,Hathor Mons,556.92
+vlc_089,-43.058,-102.672,Ne Ngam Mons,157.8
+vlc_090,-43.709,-38.435,Rakapila Mons,167.08
+vlc_091,-44.83,-86.887,Abeona Mons,334.16
+vlc_092,-45.268,-65.353,Chloris Mons,278.46
+vlc_093,-46.632,-145.418,Idunn Mons,306.3
+vlc_094,-2.0,-103.13,Alcyone Tholus,308.16
+vlc_095,-9.5,-51.91,Aleksota Mons,241.575
+vlc_096,65.64,-81.59,Bagbartu Mons,318.235
+vlc_097,-37.78,-113.49,Chuginadak Mons,431.39
+vlc_098,53.03,150.91,Ciuacoati Mons,116.855
+vlc_099,-43.97,-51.05,Faravari Mons,360.425
+vlc_100,-47.52,58.17,Gurshi Mons,136.03
+vlc_101,19.09,-91.68,Kono Mons,306.325
+vlc_102,13.88,161.58,Lahar Mons,188.93
+vlc_103,2.72,172.86,Lamashtu Mons,222.865
+vlc_104,-59.24,56.75,Loo-Wit Mons,175.765
+vlc_105,9.5,-150.54,Mem Loimis Mons,286.305
+vlc_106,10.81,174.24,Muhongo Mons,138.025
+vlc_107,26.02,-162.59,Ninisinna Mons,212.05
+vlc_108,19.31,-16.12,no_name#108,109.365
+vlc_109,14.37,-118.84,no_name#109,563.075
+vlc_110,9.93,-159.31,no_name#110,164.985
+vlc_111,20.37,-171.41,no_name#111,360.14
+vlc_112,-69.69,86.97,no_name#112,301.32
+vlc_113,-55.49,57.09,Kshumay Mons,267.43
+vlc_114,-2.15,-165.27,Ongwuti Mons,362.98
+vlc_115,32.39,-77.09,Rhea Mons,711.27
+vlc_116,13.66,-68.5,Samodiva Mons,288.98
+vlc_117,-27.1,-87.07,Ts'an Nu Mons,252.62
+vlc_118,13.88,-45.22,Tuli Mons,521.71
+vlc_119,-41.9,41.57,Tuzandi Mons,242.55
+vlc_120,-6.19,-60.74,Vostrukha Mons,205.89
+vlc_121,14.1,-113.01,Wyrd Mons,224.53
+vlc_122,39.66,-165.94,Xtoh Mons,236.17
+vlc_123,-8.97,-145.73,Ya-Yerv Corona,422.56
+vlc_124,-31.95,99.71,no_name#124,276.06
+vlc_125,-10.7,173.07,Khabuchi Corona,346.5
+vlc_126,-7.13,-138.25,Maram Corona,412.935
+vlc_127,14.47,-155.12,Nahas-tsan Mons,486.74
+vlc_128,22.19,-120.37,Nazit Mons,265.795
+vlc_129,-37.84,23.61,Ninhursag Corona,283.785
+vlc_130,-11.01,-148.68,Oduduwa Corona,258.075
+vlc_131,14.55,15.69,Sappho Patera,499.5
+vlc_132,-16.51,-105.02,Spandarmat Mons,415.43
+vlc_133,32.84,-121.26,Venilia Mons,311.66
+vlc_134,9.03,-140.79,no_name#134,195.18
+vlc_135,12.3,-133.44,no_name#135,471.69
