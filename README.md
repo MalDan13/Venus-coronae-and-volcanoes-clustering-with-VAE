@@ -9,10 +9,10 @@ This project consists of four folders: "data", "model_train", "model_test", and 
 * In the "model_test" folder, there are notebooks for testing the trained models.
 * Finally, the "latent_dim_clustering" folder includes two notebooks. The first notebook extracts features from the latent space of autoencoders and the second one performs clustering using K-means and other algorithms such as hierarchical clustering and Gaussian mixture models.
 ## Pipeline
-1) Before training, each image and topographic map is cut into 64 512x512 pixel tiles with overlap using "Cut_tiles_folder.py".
-2) These tiles are then trained with two separate autoencoders for SAR images and topography maps.
-3) The results are then checked on the entire images after training.
-4) Latent dimensions from the trained models are extracted and combined with other data (coordinates, diameters) to create a new dataset "latent_features_expended_with_types.csv".
-5) This dataset is reduced in dimension using PCA and then used for clustering.
+1) Before training, each image and topographic map is cut into 64 tiles of 512x512 pixel size with overlap using "Cut_tiles_folder.py".
+2) These tiles are used for further two separate autoencoders for SAR images and topography maps training.
+3) The results are then validated on the entire images after training.
+4) Latent space features from the trained models are extracted and combined with other data (coordinates, diameters) to create a new dataset "latent_features_expended_with_types.csv".
+5) "latent_features_expended_with_types.csv" dataset is also processed via PCA to reduce its dimension; and further utilized for volcanoes and coronae clustering.
 ## Acknowledgments:
 The autoencoders used in this work were adopted from the VanillaVAE (https://github.com/AntixK/PyTorch-VAE). Thanks a lot to https://github.com/Nikita-Belyakov for immense help and support.
