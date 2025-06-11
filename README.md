@@ -1,4 +1,4 @@
-# Venus coronae and volcanic clusters with VAEs
+# Clustering of volcanoes and coronae on Venus based on neural network processing
 ## Annotation
 More than thirty years have passed since the Magellan mission. However, the classification of volcanic features on Venus is still unresolved. In this study, we use machine learning techniques to classify new types of coronas and large and intermediate-sized volcanoes on the planet. Unlike previous approaches that relied on manual analysis of satellite images, radar data, and topographic profiles to determine the size of volcanoes, we employ a variational autoencoder to extract features directly from satellite imagery. We then use clustering algorithms such as K-means, DBSCAN and hierarchical clustering to identify different types of geological features. The results from this study could contribute to automated analysis of the Venusian surface, expansion of our understanding of volcanic activity, and preparation for future exploration missions.
 
